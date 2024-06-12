@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" author="Christopher_Kingsley">
+    <title>Calculator</title>
+    <link rel="stylesheet" href="calculator.css">
+</head>
+<body>
+    <div class="calculator">
+        <h1>Calculator</h1>
+        <div class="inputArea">
+            <div class="inputFields">
+                <label for="xinput">X Input: </label>
+                <input type="text" id="xinput" required>
+                <label for="opinput">Operand: </label>
+                <input type="text" id="opinput" required>
+                <label for="yinput">Y Input: </label>
+                <input type="text" id="yinput" required>
+            </div>
+            <div class="buttons">
+                <button type="button" onclick="Cancel();">Cancel</button>
+                <button type="button" onclick="okButton();">OK</button>
+            </div>
+        </div>
+        <div class="outputArea">
+            <table id="outputTable">
+                <thead>
+                    <tr>
+                        <th>X</th>
+                        <th>Op</th>
+                        <th>Y</th>
+                        <th>Result</th>
+                    </tr>
+                </thead>
+                <tbody id="basicInfo">
+                    <!-- Dynamic content will be inserted here -->
+                </tbody>
+                <tbody id="calculationResults">
+                    <tr>
+                        <th>Min</th>
+                        <th>Max</th>
+                        <th>Average</th>
+                        <th>Total</th>
+                    </tr>
+                    <tr>
+                        <td id="minout"></td>
+                        <td id="maxout"></td>
+                        <td id="avgout"></td>
+                        <td id="totout"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="calculator.js"></script>
+</body>
+</html>
